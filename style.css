@@ -35,7 +35,7 @@ section.top-page{
 .big-title{
     color: white;
     font-size: 80px;
-    font-family: 'Abril Fatface';
+    font-family: 'Abril Fatface', cursive;
     font-weight: 100;
 }
 
@@ -58,4 +58,106 @@ nav.nav li{
     text-decoration: none;
     position: absolute;
     bottom: 160px; /*Permet de positioner l'élément a gauche, droite,haut ou bas avec un nombre de pixels grace a la position absolute au dessus*/
+}
+
+/*SERVICES*/
+
+.services{
+    display: flex;
+    justify-content: space-evenly; /*C'est comme space-between mais un peu plus propre*/
+    margin: 50px;
+}
+
+.delivery-icon{
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-details{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* NOS MEILLEURES VENTES */
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    height: 7px;
+    width: 50px;
+    bottom: 0;  /*Quand on met un élément en position relatif ensuite a l'interieur de cet element si on met des sous elment en absolu on pourra 
+                leur dire de se mettre a droite a gauche ou en haut ou en bas. Ici le titre est en relatif donc pour mettre un element autour on 
+                doit mettre cet élément en position absolute*/
+}
+
+.best-items{
+    margin: 100px;
+}
+
+.best-plants{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box{
+    position: relative;
+    min-width: 350px;
+    height: 500px;
+    
+}
+
+.no-grid{
+    flex: 1; /*C'est pour que si il y'a 4 images par exemple alors ça prendra tout l'espace vide pour le donner aux 4 images. Pareil pour 1 ou 9 images*/
+    background-size: cover; 
+    background-position: center;/*Pour centrer les images avec la propriété du dessus aussi*/
+}
+
+.plant1{
+    background-image: url("images/meilleures-ventes/1.jpg");
+}
+.plant2{
+    background-image: url("images/meilleures-ventes/2.jpg");
+}
+.plant3{
+    background-image: url("images/meilleures-ventes/3.jpg");
+}
+.plant4{
+    background-image: url("images/meilleures-ventes/4.jpg");
+}
+
+.plant-details{
+    position: absolute;
+    background-color: #FFFFFFDF;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.plant-name{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.plant-price{
+    color: #ADD981;
+    font-weight: 800;
+    line-height: 3px;
+    font-size: 14px;
 }
