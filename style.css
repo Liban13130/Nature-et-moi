@@ -1,0 +1,61 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 150px;
+}
+
+section.top-page{
+    background: url('../images/bg.jpg');
+    background-size: cover; /*Permet de ne pas repeter l'image en cas d'agrandissement*/
+    height: 80vh;
+    padding: 25px;
+}
+
+/* LANDING PAGE PAGE DE BIENVENUE */
+
+.landing-page{
+        padding: 20px 50px;
+
+}
+
+.big-title{
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril Fatface';
+    font-weight: 100;
+}
+
+/* -- MENU NAV -- */
+
+nav.nav{
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+nav.nav li{
+    color: white;
+}
+
+.scroll-down{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: absolute;
+    bottom: 160px; /*Permet de positioner l'élément a gauche, droite,haut ou bas avec un nombre de pixels grace a la position absolute au dessus*/
+}
