@@ -2,7 +2,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0 auto;
@@ -37,6 +39,7 @@ section.top-page{
     font-size: 80px;
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
+    width: 60%;
 }
 
 /* -- MENU NAV -- */
@@ -51,6 +54,11 @@ nav.nav{
 
 nav.nav li{
     color: white;
+}
+
+nav.nav a{
+    text-decoration: none;
+    color: #FFFFFFDF;
 }
 
 .scroll-down{
@@ -219,4 +227,19 @@ nav.nav li{
     grid-row: 3/5;
     background-size: cover;
     background-position: center;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    margin: 20px 100px;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: black;
 }
